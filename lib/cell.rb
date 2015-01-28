@@ -1,11 +1,13 @@
 class Cell
 
-  def value
-    value = 0
+  attr_accessor :value
+
+  def initialize(value = 0)
+    @value = value
   end
 
   def candidates
-    candidates = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    (1..9).to_a
   end
 
 end
