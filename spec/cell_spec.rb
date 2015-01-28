@@ -1,12 +1,13 @@
-# require 'cell'
+require 'cell'
 
 describe 'cell' do
 
-  it 'can have a value when created' do
-    
+  it 'is initialized unsolved' do
+    cell = Cell.new
+    expect(cell.value).to be (0)
   end
 
-  it 'should know when it has been filled' do
+  it 'should know when it has been solved' do
     
   end
 
