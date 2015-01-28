@@ -15,4 +15,12 @@ describe 'cell' do
     end
   end
 
+  context 'solving' do
+
+    it 'knows if it has a value' do
+      
+    end
+
+  end
+
 end
