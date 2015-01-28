@@ -2,4 +2,4 @@
 
 
 
-A Ruby program to solve a simple sudoku puzzle.
+A Ruby program that can automatically generate and solve any 9 x 9 Sudoku grid.
