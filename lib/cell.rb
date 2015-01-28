@@ -10,4 +10,8 @@ class Cell
     (1..9).to_a
   end
 
+  def has_value?
+    value != 0
+  end
+
 end

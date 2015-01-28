@@ -18,7 +18,9 @@ describe 'cell' do
   context 'solving' do
 
     it 'knows if it has a value' do
-      
+      solved_cell = Cell.new(5)
+      expect(cell.has_value?).to be false
+      expect(solved_cell.has_value?).to be true
     end
 
   end
