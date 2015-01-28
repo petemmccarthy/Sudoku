@@ -2,12 +2,12 @@ require 'cell'
 
 describe 'cell' do
 
-  let(:cell)  { Cell.new }
-  let(:solved_cell)  { Cell.new(5) }
+  let(:cell)          { Cell.new }
+  let(:solved_cell)   { Cell.new(5) }
 
   context 'initializing' do
 
-    it 'is initialized unsolved' do
+    it 'is initialized with no value' do
       expect(cell.value).to eq 0
     end
 
@@ -26,7 +26,6 @@ describe 'cell' do
     it 'knows what its value is' do
       expect(solved_cell.value).to eq 5
     end
-
   end
 
 end
