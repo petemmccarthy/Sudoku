@@ -23,8 +23,17 @@ describe 'cell' do
       expect(solved_cell.has_value?).to be true
     end
 
+    it 'can be given a value' do
+      cell.value = 9
+      expect(cell.value).to eq 9
+    end
+
     it 'knows what its value is' do
       expect(solved_cell.value).to eq 5
+    end
+
+    it 'knows what canidates are remaining' do
+
     end
   end
 
