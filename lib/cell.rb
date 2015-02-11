@@ -12,7 +12,7 @@ class Cell
   end
 
   def available_candidates
-
+    
   end
 
 end
