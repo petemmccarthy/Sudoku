@@ -33,8 +33,7 @@ describe 'cell' do
     end
 
     it 'knows what canidates are remaining' do
-      another_solved_cell = Cell.new(9)
-      expect(cell.available_candidates).to eq [1, 2, 3, 4, 6, 7, 8]
+      expect(cell.available_candidates).to eq [1, 2, 3, 4, 6, 7, 8, 9]
     end
   end
 
