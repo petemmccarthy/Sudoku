@@ -32,7 +32,7 @@ describe 'cell' do
       expect(solved_cell.value).to eq 5
     end
 
-    it 'knows what canidates are remaining' do
+    it 'knows what candidates are remaining' do
       expect(cell.available_candidates).to eq [1, 2, 3, 4, 6, 7, 8, 9]
     end
   end

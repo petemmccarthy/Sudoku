@@ -12,7 +12,11 @@ class Cell
   end
 
   def available_candidates
-    
+    @candidates - taken_candidates
+  end
+
+  def taken_candidates
+    taken_candidates << cell
   end
 
 end
