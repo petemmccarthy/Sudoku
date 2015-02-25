@@ -6,13 +6,17 @@ describe 'cell' do
   let(:solved_cell)   { Cell.new(5) }
 
   context 'initializing' do
-
     it 'is initialized with no value' do
       expect(cell.value).to eq 0
     end
 
     it 'has a list of candidate values' do
      expect(cell.candidates).to eq (1..9).to_a
+    end
+
+    it 'can be gievn a value at initialization' do
+      new_cell = Cell.new (1)
+      expect(new_cell.value).to eq 1
     end
   end
 
