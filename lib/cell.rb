@@ -11,8 +11,8 @@ class Cell
     value != 0
   end
 
-  def available_candidates
-    @available_candidates = @candidates - taken_candidates
+  def neighbours
+
   end
 
 end

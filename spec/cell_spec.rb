@@ -10,11 +10,11 @@ describe 'cell' do
       expect(cell.value).to eq 0
     end
 
-    it 'has a list of candidate values' do
+    it 'has a list of possible candidates' do
      expect(cell.candidates).to eq (1..9).to_a
     end
 
-    it 'can be gievn a value at initialization' do
+    it 'can be given a value at initialization' do
       new_cell = Cell.new (1)
       expect(new_cell.value).to eq 1
     end
@@ -36,8 +36,9 @@ describe 'cell' do
       expect(solved_cell.value).to eq 5
     end
 
-    it 'knows what candidates are remaining' do
-      expect(cell.available_candidates).to eq [1, 2, 3, 4, 6, 7, 8, 9]
+    it 'knows what candidates are available' do
+      cell.neighbours = [Cell.new(1), Cell.new(2), Cell.new(3)]
+      expect(cell.available_candidates).to eq [4, 5, 6, 7, 8, 9]
     end
   end
 
