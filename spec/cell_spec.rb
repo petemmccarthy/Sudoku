@@ -18,6 +18,10 @@ describe 'cell' do
       new_cell = Cell.new (1)
       expect(new_cell.value).to eq 1
     end
+
+    it 'should have an empty list of neighbours' do
+      expect(cell.neighbours).to be_empty
+    end
   end
 
   context 'solving' do
@@ -34,11 +38,6 @@ describe 'cell' do
 
     it 'knows what its value is' do
       expect(solved_cell.value).to eq 5
-    end
-
-    it 'knows what candidates are available' do
-      cell.neighbours = [Cell.new(1), Cell.new(2), Cell.new(3)]
-      expect(cell.available_candidates).to eq [4, 5, 6, 7, 8, 9]
     end
   end
 

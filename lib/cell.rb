@@ -11,8 +11,4 @@ class Cell
     value != 0
   end
 
-  def neighbours
-
-  end
-
 end
