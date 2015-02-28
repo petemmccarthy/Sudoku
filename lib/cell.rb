@@ -11,4 +11,8 @@ class Cell
     value != 0
   end
 
+  def neighbours
+    @neighbours = []
+  end
+
 end
