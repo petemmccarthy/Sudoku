@@ -1,5 +1,4 @@
 require 'board'
-require 'cell'
 
 describe 'board' do
 
@@ -8,12 +7,12 @@ describe 'board' do
 
   context 'when initialized' do
 
-    it 'should have 81 cells when initialized' do
+    it 'should have 81 cells' do
       expect(board.cells.count).to eq 81
     end
 
-    xit 'should have an unsolved first cell' do
-
+    it 'should have an unsolved first cell' do
+      expect(board.cells[0].has_value?).to be false
     end
 
     xit 'should have a solved second cell' do

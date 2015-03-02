@@ -5,8 +5,8 @@ describe 'cell' do
   let(:cell)          { Cell.new }
   let(:solved_cell)   { Cell.new(5) }
 
-  context 'initializing' do
-    it 'is initialized with no value' do
+  context 'when initialized' do
+    it 'has no value' do
       expect(cell.value).to eq 0
     end
 
@@ -14,7 +14,7 @@ describe 'cell' do
      expect(cell.candidates).to eq (1..9).to_a
     end
 
-    it 'can be given a value at initialization' do
+    it 'can be given a value' do
       new_cell = Cell.new (1)
       expect(new_cell.value).to eq 1
     end
@@ -24,7 +24,7 @@ describe 'cell' do
     end
   end
 
-  context 'solving' do
+  context 'when solving' do
 
     it 'knows if it has a value' do
       expect(cell.has_value?).to be false
