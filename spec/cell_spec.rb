@@ -53,7 +53,7 @@ describe 'cell' do
     end
 
     it 'raises exception if you try to solve a cell with a value' do
-      expect(solved_cell.solve).to raise "Cell already has a value"
+      expect { solved_cell.solve }.to raise_error
     end
   end
 
