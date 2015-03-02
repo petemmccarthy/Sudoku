@@ -15,8 +15,8 @@ describe 'board' do
       expect(board.cells[0].has_value?).to be false
     end
 
-    xit 'should have a solved second cell' do
-      
+    it 'should have a solved second cell' do
+      expect(board.cells[1].has_value?).to be true
     end
   end
 
