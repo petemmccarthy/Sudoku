@@ -43,7 +43,7 @@ describe 'cell' do
     it 'knows what candidates are available' do
       cell.neighbours = [Cell.new(1), Cell.new(2), Cell.new(3)]
       cell.available_candidates
-      expect(cell.candidates).to eq [4, 5, 6, 7, 8]
+      expect(cell.candidates).to eq [4, 5, 6, 7, 8, 9]
     end
   end
 

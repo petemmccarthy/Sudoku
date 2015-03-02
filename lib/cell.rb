@@ -12,4 +12,8 @@ class Cell
     value != 0
   end
 
+  def available_candidates
+    neighbours.each { |cell| candidates.delete(cell.value) }
+  end
+
 end
