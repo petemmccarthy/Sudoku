@@ -51,6 +51,10 @@ describe 'cell' do
       cell.solve
       expect(cell.value).to eq 3
     end
+
+    it 'raises exception if you try to solve a cell with a value' do
+      expect(solved_cell.solve).to raise "Cell already has a value"
+    end
   end
 
 end

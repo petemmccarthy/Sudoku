@@ -17,8 +17,11 @@ class Cell
   end
 
   def solve
-    remaining_candidates
-    @value = candidates.pop if candidates.length == 1
+     if @value > 0
+      raise "Cell already has a value"
+     end
+      remaining_candidates
+      @value = candidates.pop if candidates.length == 1
   end
 
 end
