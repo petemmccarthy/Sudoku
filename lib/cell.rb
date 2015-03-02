@@ -16,4 +16,9 @@ class Cell
     neighbours.each { |cell| candidates.delete(cell.value) }
   end
 
+  def solve
+    remaining_candidates
+    @value = candidates.pop if candidates.length == 1
+  end
+
 end

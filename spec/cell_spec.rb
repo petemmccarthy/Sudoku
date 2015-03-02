@@ -45,6 +45,12 @@ describe 'cell' do
       cell.remaining_candidates
       expect(cell.candidates).to eq [4, 5, 6, 7, 8, 9]
     end
+
+    it 'can solve itself if only one empty value remains' do
+      cell.candidates = [3]
+      cell.solve
+      expect(cell.value).to eq 3
+    end
   end
 
 end
