@@ -1,11 +1,9 @@
 
 class Board
 
-  def initialize(puzzle)
-    
-  end
+  attr_accessor :cells
 
-  def cells
+  def initialize(puzzle)
     @cells = Array.new(81, Cell.new)
   end
 

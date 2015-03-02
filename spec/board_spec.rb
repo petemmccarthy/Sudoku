@@ -1,4 +1,5 @@
 require 'board'
+require 'cell'
 
 describe 'board' do
 
