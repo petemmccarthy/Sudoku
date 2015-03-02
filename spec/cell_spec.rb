@@ -40,9 +40,9 @@ describe 'cell' do
       expect(solved_cell.value).to eq 5
     end
 
-    it 'knows what candidates are available' do
+    it 'knows what candidates are remaining' do
       cell.neighbours = [Cell.new(1), Cell.new(2), Cell.new(3)]
-      cell.available_candidates
+      cell.remaining_candidates
       expect(cell.candidates).to eq [4, 5, 6, 7, 8, 9]
     end
   end
