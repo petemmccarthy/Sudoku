@@ -20,10 +20,9 @@ describe 'board' do
       expect(board.cells[1].value).to eq 1
     end
 
-    it 'should map puzzle values to new cells' do
-      board.puzzle_value_array(puzzle)
-      board.map_puzzle_values(puzzle_value_array)
-      expect(board.cells[1].value).to be 1
+    it 'should map puzzle values to new cells' do 
+      board.map_puzzle_values(puzzle)
+      expect(board.cells[1].value).to eq 1
     end
   end
 
