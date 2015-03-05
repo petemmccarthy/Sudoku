@@ -21,7 +21,7 @@ describe 'board' do
     end
 
     it 'should map puzzle values to new cells' do
-      puzzle_value_array(puzzle)
+      board.puzzle_value_array(puzzle)
       board.map_puzzle_values(puzzle_value_array)
       expect(board.cells[1].value).to be 1
     end
