@@ -6,6 +6,7 @@ class Board
   def initialize(puzzle)
     # @puzzle = puzzle
     @cells = Array.new(81) { Cell.new }
+    map_puzzle_values(puzzle)
   end
 
   def map_puzzle_values(puzzle)
