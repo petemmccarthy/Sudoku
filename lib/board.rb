@@ -1,3 +1,4 @@
+
 class Board
 
   attr_accessor :cells
@@ -8,7 +9,7 @@ class Board
   end
 
   def map_puzzle_values(puzzle)
-
+    puzzle_array = puzzle.split('').map { |char| char.to_i }
   end
 
 end
