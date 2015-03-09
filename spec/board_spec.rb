@@ -26,4 +26,10 @@ describe 'board' do
     end
   end
 
+  context 'when solving' do
+    it 'knowswhen the game has been completd' do
+      
+    end
+  end
+
 end
